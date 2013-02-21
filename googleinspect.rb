@@ -8,8 +8,8 @@ page = agent.get('https://facebook.com/')
 #puts page.forms.inspect  # then inspect form elements, these elements will be arranged in an array
 fb_form = page.forms[0]  # select 1st form
 
-fb_form.email = 'baotrungtn@live.com'  # fill in email
-fb_form.pass = 'baotrung'  # fill password
+fb_form.email = 'abc@example.com'  # fill in email
+fb_form.pass = 'yourpassword'  # fill password
 
 #puts fb_form.buttons.inspect  # then inspect button elements, these buttons are also arranged in an array
 #puts fb_form.buttons[0].inspect  # Log In is button[0] in button array
