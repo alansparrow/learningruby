@@ -1,0 +1,7 @@
+---
+- !ruby/object:Person
+  age: 45
+  name: Jimmy
+- !ruby/object:Person
+  age: 23
+  name: Laura Smith

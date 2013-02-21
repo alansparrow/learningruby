@@ -1,0 +1,1 @@
+File.delete("logfile21.txt", "logfile22.txt", "logfile23.txt")

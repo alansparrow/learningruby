@@ -1,0 +1,8 @@
+<%= render :partial => 'session_count' %>
+<% @entries.each do |entry| %>
+  <h1><%= entry.title %></h1>
+  <p><%= entry.content %></p>
+  <p><em>Posted at <%= entry.created_at %></em></p>
+<% end %>
+
+<%= link_to 'Add New Entry', new_entry_path %>

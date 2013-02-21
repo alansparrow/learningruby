@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>test_sentences (TestWordPlay)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File test_wordplay.rb, line 10</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_sentences</span>
+    <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;a&quot;</span>, <span class="ruby-value str">&quot;b&quot;</span>, <span class="ruby-value str">&quot;c d&quot;</span>, <span class="ruby-value str">&quot;e f g&quot;</span>], <span class="ruby-value str">&quot;a. b. c d. e f g.&quot;</span>.<span class="ruby-identifier">sentences</span>)
+    <span class="ruby-identifier">test_text</span> = <span class="ruby-value str">%q{Hello. This is a test
+of sentence separation. This is the end
+of the test.}</span>
+    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;This is the end of the test&quot;</span>, <span class="ruby-identifier">test_text</span>.<span class="ruby-identifier">sentences</span>[<span class="ruby-value">2</span>])
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

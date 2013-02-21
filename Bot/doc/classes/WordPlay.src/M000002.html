@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>best_sentence (WordPlay)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File wordplay.rb, line 36</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">best_sentence</span>(<span class="ruby-identifier">sentences</span>, <span class="ruby-identifier">desired_words</span>)
+    <span class="ruby-identifier">ranked_sentences</span> = <span class="ruby-identifier">sentences</span>.<span class="ruby-identifier">sort_by</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">s</span>.<span class="ruby-identifier">words</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> (<span class="ruby-identifier">s</span>.<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">words</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">desired_words</span>).<span class="ruby-identifier">length</span>
+    <span class="ruby-keyword kw">end</span>
+    
+    <span class="ruby-identifier">ranked_sentences</span>.<span class="ruby-identifier">last</span>
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

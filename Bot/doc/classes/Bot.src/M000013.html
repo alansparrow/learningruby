@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>response_to (Bot)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File bot.rb, line 32</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">response_to</span>(<span class="ruby-identifier">input</span>)
+    <span class="ruby-identifier">prepared_input</span> = <span class="ruby-identifier">preprocess</span>(<span class="ruby-identifier">input</span>).<span class="ruby-identifier">downcase</span>
+    <span class="ruby-identifier">sentence</span> = <span class="ruby-identifier">best_sentence</span>(<span class="ruby-identifier">prepared_input</span>)
+    <span class="ruby-identifier">responses</span> = <span class="ruby-identifier">possible_responses</span>(<span class="ruby-identifier">sentence</span>)
+    <span class="ruby-identifier">responses</span>[<span class="ruby-identifier">rand</span>(<span class="ruby-identifier">responses</span>.<span class="ruby-identifier">length</span>)]
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>
